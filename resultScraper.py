@@ -23,18 +23,15 @@ else:
 	flag = file.read(1)
 
 if flag == "0":
+
+	payload = {'rid': usn,'submit': 'SUBMIT'}
 	
 	headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:39.0) Gecko/20100101 Firefox/39.0',
-        'X-Requested-With': 'XMLHttpRequest',
-        'Host': 'results.vtu.ac.in',
-        'Referer': 'http://results.vtu.ac.in/'
-    }
-
-    payload = {
-        'rid': usn,
-        'submit': 'SUBMIT'
-	}
+		'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:39.0) Gecko/20100101 Firefox/39.0',
+		'X-Requested-With': 'XMLHttpRequest',
+		'Host': 'results.vtu.ac.in',
+		'Referer': 'http://results.vtu.ac.in/'
+		}
 
     # xpath selector for subject name
     sub_xpath = '/html/body/table/tbody/tr[3]/td[2]/table/tbody/tr[3]/td/table/tbody/tr[2]/td[1]/table[2]/tbody/tr/td/table/tbody/tr[2]/td/table[2]/tr[{}]/td[{}]/i/text()'
