@@ -1,7 +1,7 @@
 VTU Result Notifier
 ===================
 
-[![Build Status](https://travis-ci.org/abhijith0505/VTU-Result-Notifier.svg?branch=master)](https://travis-ci.org/abhijith0505/VTU-Result-Notifier)			[![Project Status](https://img.shields.io/badge/Development-Undergoing-lightgrey.svg)]
+[![Build Status](https://travis-ci.org/abhijith0505/VTU-Result-Notifier.svg?branch=master)](https://travis-ci.org/abhijith0505/VTU-Result-Notifier)			![Project Status](https://img.shields.io/badge/Development-Undergoing-lightgrey.svg)
 
 
 
