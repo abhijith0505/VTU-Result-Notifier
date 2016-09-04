@@ -34,7 +34,7 @@ if flag == "0":
     payload = {
         'rid': usn,
         'submit': 'SUBMIT'
-    }
+	}
 
     # xpath selector for subject name
     sub_xpath = '/html/body/table/tbody/tr[3]/td[2]/table/tbody/tr[3]/td/table/tbody/tr[2]/td[1]/table[2]/tbody/tr/td/table/tbody/tr[2]/td/table[2]/tr[{}]/td[{}]/i/text()'

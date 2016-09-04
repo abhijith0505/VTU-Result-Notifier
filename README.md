@@ -25,10 +25,6 @@ Prerequisite
 
 	`$ pip install -r requirements.txt`
 
-	- Installs BeautifulSoup, which is used for scraping the website. The package name is *beautifulsoup4*, and the same package works on Python 2 and Python 3.
-	
-	- The SMS to your number is sent using **twilio**. Installs twilio module.
-
 > If you do not have pip installed, install it using:  
 	> `$ easy_install pip`
 
