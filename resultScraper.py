@@ -4,9 +4,9 @@ import urllib2
 from twilio.rest import TwilioRestClient
 from lxml import etree, html
 
-account_sid = " " # Your Account SID from www.twilio.com/console
-auth_token  = " "  # Your Auth Token from www.twilio.com/console
-usn = "" # Your USN
+account_sid = "ACa430ab20aa2d3e4d809ec5412b58dc73" # Your Account SID from www.twilio.com/console
+auth_token  = "b9c9bbd8dbee627506cbfd67f29b5fcf"  # Your Auth Token from www.twilio.com/console
+usn = "1mv14cs004" # Your USN
 
 BASE_URL = 'http://results.vtu.ac.in'
 
@@ -117,18 +117,18 @@ if flag == "0":
 				
 		client = TwilioRestClient(account_sid, auth_token)
 
-		message = client.messages.create(body="Res=" + result + ", " 
-			+ sub1[0] + ":" + sub1_total[0] + ","
-			+ sub2[0] + ":" + sub2_total[0] + ","
-			+ sub3[0] + ":" + sub3_total[0] + ","
-			+ sub4[0] + ":" + sub4_total[0] + ","
-			+ sub5[0] + ":" + sub5_total[0] + ","
-			+ sub6[0] + ":" + sub6_total[0] + ","
-			+ sub7[0] + ":" + sub7_total[0] + ","
-			+ sub8[0] + ":" + sub8_total[0] + ","
+		message = client.messages.create(body="" 
+			+ sub1[0][-9:] + ":" + sub1_total[0] + ","
+			+ sub2[0][-9:] + ":" + sub2_total[0] + ","
+			+ sub3[0][-9:] + ":" + sub3_total[0] + ","
+			+ sub4[0][-9:] + ":" + sub4_total[0] + ","
+			+ sub5[0][-9:] + ":" + sub5_total[0] + ","
+			+ sub6[0][-9:] + ":" + sub6_total[0] + ","
+			+ sub7[0][-9:] + ":" + sub7_total[0] + ","
+			+ sub8[0][-9:] + ":" + sub8_total[0] + ","
 			+ "Total:" + total_marks,	#Messgage body you want to receive as SMS
-			to=" ",   #Replace with your number to which you want to send the message
-			from_=" ") # Replace with your Twilio number
+			to="+919738982441",   #Replace with your number to which you want to send the message
+			from_="+12562803318") # Replace with your Twilio number
 		file = open('rctmp','w')
 		file.write('1')
 
