@@ -104,16 +104,16 @@ if flag == "0":
 	sub8_total = tree.xpath(sub_xpath2.format('9', '4'))
 	sub8_result = tree.xpath(sub_xpath3.format('9', '5'))
 
-    try:
-        student_name_usn = student_name_usn[0].split('(')
-        result = result[0].split()
-        total_marks = total_marks[0].strip().replace(' ','')
-        if len(result) == 5:
-            result = result[1] + ' ' + result[2] + ' ' + result[3] + ' ' + result[4]
-        elif len(result) == 3:
-            result = result[1] + ' ' + result[2]
-        elif len(result) == 2:
-            result = result[1]  
+	try:
+		student_name_usn = student_name_usn[0].split('(')
+		result = result[0].split()
+		total_marks = total_marks[0].strip().replace(' ','')
+		if len(result) == 5:
+			result = result[1] + ' ' + result[2] + ' ' + result[3] + ' ' + result[4]
+		elif len(result) == 3:
+			result = result[1] + ' ' + result[2]
+		elif len(result) == 2:
+			result = result[1]  
 				
 		client = TwilioRestClient(account_sid, auth_token)
 
@@ -132,5 +132,5 @@ if flag == "0":
 		file = open('rctmp','w')
 		file.write('1')
 
-    except IndexError as e:
+	except IndexError as e:
 		donothing = 1
