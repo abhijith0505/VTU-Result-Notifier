@@ -4,9 +4,9 @@ import urllib2
 from twilio.rest import TwilioRestClient
 from lxml import etree, html
 
-account_sid = "ACa430ab20aa2d3e4d809ec5412b58dc73" # Your Account SID from www.twilio.com/console
-auth_token  = "b9c9bbd8dbee627506cbfd67f29b5fcf"  # Your Auth Token from www.twilio.com/console
-usn = "1mv14cs004" # Your USN
+account_sid = "" # Your Account SID from www.twilio.com/console
+auth_token  = ""  # Your Auth Token from www.twilio.com/console
+usn = "" # Your USN
 
 BASE_URL = 'http://results.vtu.ac.in'
 
@@ -127,8 +127,8 @@ if flag == "0":
 			+ sub7[0][-9:] + ":" + sub7_total[0] + ","
 			+ sub8[0][-9:] + ":" + sub8_total[0] + ","
 			+ "Total:" + total_marks,	#Messgage body you want to receive as SMS
-			to="+919738982441",   #Replace with your number to which you want to send the message
-			from_="+12562803318") # Replace with your Twilio number
+			to="",   #Replace with your number to which you want to send the message
+			from_="") # Replace with your Twilio number
 		file = open('rctmp','w')
 		file.write('1')
 
