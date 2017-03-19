@@ -1,4 +1,4 @@
-VTU Result Notifier
+VTU Result Notifier [DEPRECATED]
 ===================
 
 [![Build Status](https://travis-ci.org/abhijith0505/VTU-Result-Notifier.svg?branch=master)](https://travis-ci.org/abhijith0505/VTU-Result-Notifier)			![Project Status](https://img.shields.io/badge/Development-Complete-lightgrey.svg)
