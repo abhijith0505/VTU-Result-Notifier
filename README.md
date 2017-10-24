@@ -1,7 +1,9 @@
 VTU Result Notifier [DEPRECATED]
 ===================
 
-[![Build Status](https://travis-ci.org/abhijith0505/VTU-Result-Notifier.svg?branch=master)](https://travis-ci.org/abhijith0505/VTU-Result-Notifier)			![Project Status](https://img.shields.io/badge/Development-Complete-lightgrey.svg)
+[![Build Status](https://travis-ci.org/abhijith0505/VTU-Result-Notifier.svg?branch=master)](https://travis-ci.org/abhijith0505/VTU-Result-Notifier)
+![Project Status](https://img.shields.io/badge/Development-Complete-lightgrey.svg)
+[![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)](https://github.com/abhijith0505/VTU-Result-Notifier/blob/master/LICENSE)
 
 
 
